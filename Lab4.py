@@ -25,3 +25,20 @@ def task2():
     windows = sliding_window(data, 3)
     print(list(windows)) 
 
+while True:
+    print("\n ГОЛОВНЕ МЕНЮ ")
+    print("1 Завдання")
+    print("2 Завдання ")
+    print("0. Вийти з програми")
+    
+    choice = input("Оберіть пункт меню: ")
+    
+    if choice == "1":
+        task1()
+    elif choice == "2":
+        task2()
+    elif choice == "0":
+        print("Вихід з програми.")
+        break
+    else:
+        print("Невірний вибір. Будь ласка, введіть 1, 2, 3 або 0.")
